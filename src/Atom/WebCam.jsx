@@ -29,7 +29,7 @@ const WebCam = ({ faceDetection }) => {
         console.error(err)
     }
     const getWebCamVideoSource = () => {
-        navigator.getUserMedia({ audio: false, video: true }, (stream) => handleUserMedia(stream), (err) => handleMediaError(err))
+        navigator.getUserMedia({ audio: false, video: {width: 500, height: 500} }, (stream) => handleUserMedia(stream), (err) => handleMediaError(err))
     }
 
     const faceDetectionHandler = async () => {
@@ -57,7 +57,7 @@ const WebCam = ({ faceDetection }) => {
     })
     return (
         <div>
-            <canvas width="500" height="500" style={{position:"absolute", zIndex:1000}} ref={canvas} />
+            <canvas width="500" height="500" style={{position:"absolute"}} ref={canvas} ></canvas>
             <video width="500" height="500" ref={videoContainerRef} />
         </div>
     );
