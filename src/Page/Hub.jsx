@@ -1,12 +1,18 @@
 import React from 'react'
 import { Header } from '@organism';
+import { WebCam } from '@atoms';
+import '$css/hub.css'
 
 
 const Hub = () => {
+
     return (
         <div>
             <Header />
-            <h1>This is the Hub Page</h1>
+            <div className='webcam-container-style'>
+                <WebCam faceDetection={true} />
+            </div>
+
         </div>);
 }
 

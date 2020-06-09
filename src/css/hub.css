@@ -1,0 +1,9 @@
+.webcam-container-style {
+    width: 100vw;
+    height: auto;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

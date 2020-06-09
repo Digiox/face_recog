@@ -292,7 +292,8 @@ module.exports = function(webpackEnv) {
         '@pages': path.resolve('src/Page'),
         '@organism': path.resolve('src/Organism'),
         '@molecule': path.resolve('src/Molecule'),
-        '@atom': path.resolve('src/Atom'),
+        '@atoms': path.resolve('src/Atom'),
+        '$css': path.resolve('src/css'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
