@@ -291,8 +291,9 @@ module.exports = function(webpackEnv) {
       alias: {
         '@pages': path.resolve('src/Page'),
         '@organism': path.resolve('src/Organism'),
-        '@molecule': path.resolve('src/Molecule'),
+        '@molecules': path.resolve('src/Molecule'),
         '@atoms': path.resolve('src/Atom'),
+        '$functions': path.resolve('src/functions'),
         '$css': path.resolve('src/css'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
